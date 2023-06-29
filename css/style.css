@@ -1,0 +1,271 @@
+/* selector universal - Fuente tomada de google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/* Activar la fuente */
+* {
+  font-family: 'Roboto Slab', serif;
+  padding: 0;
+}
+
+/* selector descendente */
+nav {
+  background-color: rgba(27, 106, 167, 0.3);
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+
+
+nav {
+  flex-direction: column;
+  padding: auto;
+}
+
+nav ul li, nav a{
+text-align: center;
+}
+
+
+
+nav ul,
+article ul {
+  list-style: none;
+}
+
+main {
+text-align: center;
+
+}
+
+/* Formato de textos */
+h1,
+h2,
+h3 {
+  color: rgba(26, 168, 154, 1);
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.2;
+  color: rgba(27, 106, 167, 1);
+  font-weight: 200;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgba(27, 106, 167, 1);
+}
+
+form{
+  padding-bottom: 1em;
+}
+
+/* Fin de formatos de textos*/
+
+/* Clases */
+.background {
+  background-color: rgba(27, 106, 167, 0.2);
+  border-radius: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.img-ico {
+  width: 12em;
+}
+
+.img-user {
+  width: 3em;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.img-little {
+  width: 2em;
+}
+
+.img-search {
+  width: 1em;
+}
+
+.img-background {
+  width: 100%;
+}
+
+.img-sell {
+  width: 10em;
+  height: 10em;
+  /* convierte a la imagen en 10em -10em de foto sin cambiar la escala */
+  object-fit: contain;
+}
+
+.dir-flex{
+  flex-direction: column;
+}
+.contact--form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* division de caja de venta */
+.sellBox {
+  /* display: inline-block;
+  width: 40%; */
+  border-style: solid;
+  border-color: rgba(44, 43, 43, 0.185);
+  border-width: 1px;
+  text-align: center;
+}
+
+/* Color Theme Swatches in RGBA */
+.ROG-Cooling-System-1-rgba {
+  color: rgba(57, 10, 89, 1);
+}
+
+.ROG-Cooling-System-2-rgba {
+  color: rgba(22, 65, 191, 1);
+}
+
+.ROG-Cooling-System-3-rgba {
+  color: rgba(26, 39, 63, 1);
+}
+
+.ROG-Cooling-System-4-rgba {
+  color: rgba(26, 128, 191, 1);
+}
+
+.ROG-Cooling-System-5-rgba {
+  color: rgba(55, 242, 208, 1);
+}
+
+
+
+/* Preubas */
+
+
+.gridfoot{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "SM . ."
+  ". Q1 Q2";
+}
+
+
+#SM{
+  grid-area: SM;
+}
+
+#Q1{
+  grid-area: Q1;
+}
+
+#Q2{
+  grid-area: Q2;
+}
+
+
+
+/* grid */
+.centertex{
+  text-align: center;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 1em;
+  column-gap: 1em;
+  grid-template-areas:
+    "category search search"
+    "box1 box2 box3"
+    "box4 box5 box6"
+  ;
+  margin-bottom: 1em;
+}
+
+
+#category {
+  grid-area: category;
+}
+
+#search {
+  grid-area: search;
+}
+
+#box1 {
+  grid-area: box1;
+}
+
+#box2 {
+  grid-area: box2;
+}
+
+#box3 {
+  grid-area: box3;
+}
+
+#box4 {
+  grid-area: box4;
+}
+
+#box5 {
+  grid-area: box5;
+}
+
+/* prueba */
+.color{
+  background-color: rgba(27, 106, 167, 0.3);
+}
+
+/* animacion */
+/* 
+main div img:hover{
+  zoom: 150%;
+} */
+
+
+/* Responsive (agrego 992 segun el menu hamburguesa) 768 original */
+
+@media (width < 768px) {
+
+  /* Tienda */
+  .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 1em; */
+  }
+
+  nav {
+    flex-direction: column;
+    padding: auto;
+  }
+
+  nav ul li, nav a{
+  text-align: center;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: rgba(26, 168, 154, 1);
+    /* font-size: 90%; */
+  }
+
+}
+.text{
+  font-weight: bold;
+  color: rgba(27, 106, 167, 1)
+
+}

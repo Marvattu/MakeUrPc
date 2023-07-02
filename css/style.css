@@ -1,52 +1,31 @@
 /* selector universal - Fuente tomada de google */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 /* Activar la fuente */
 * {
-  font-family: 'Roboto Slab', serif;
-  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* selector descendente */
 nav {
   background-color: rgba(27, 106, 167, 0.3);
-  padding: 0.5em;
   border-radius: 1em;
 }
 
-
-
-nav {
-  flex-direction: column;
-  padding: auto;
-}
-
-nav ul li, nav a{
-text-align: center;
-}
-
-
-
 nav ul,
-article ul {
+nav a,
+li {
+  text-align: center;
   list-style: none;
 }
 
 main {
-text-align: center;
-
-}
-
-/* Formato de textos */
-h1,
-h2,
-h3 {
-  color: rgba(26, 168, 154, 1);
   text-align: center;
 }
 
+/* Formato de textos */
+
 p {
-  font-size: 1.1em;
   line-height: 1.2;
   color: rgba(27, 106, 167, 1);
   font-weight: 200;
@@ -58,30 +37,26 @@ a {
   color: rgba(27, 106, 167, 1);
 }
 
-form{
+/* separacion del footer */
+form {
   padding-bottom: 1em;
 }
 
 /* Fin de formatos de textos*/
 
 /* Clases */
-.background {
-  background-color: rgba(27, 106, 167, 0.2);
-  border-radius: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
 .img-ico {
   width: 12em;
 }
 
 .img-user {
-  width: 3em;
+  width: 2.5em;
   border-radius: 50%;
-  vertical-align: middle;
 }
 
+.hamburger{
+  width: 1.5em;
+}
 .img-little {
   width: 2em;
 }
@@ -91,6 +66,7 @@ form{
 }
 
 .img-background {
+  height: 15em;
   width: 100%;
 }
 
@@ -101,14 +77,23 @@ form{
   object-fit: contain;
 }
 
-.dir-flex{
-  flex-direction: column;
+/* no se porque pasa esto ("preguntas frecuentes" se corre) */
+.correct-pad {
+  padding: 0%;
 }
+
+
 .contact--form {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-left: 25%;
+  text-align: left;
+}
+
+.marg-form {
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 
 /* division de caja de venta */
@@ -120,68 +105,41 @@ form{
   border-width: 1px;
   text-align: center;
 }
-
-/* Color Theme Swatches in RGBA */
-.ROG-Cooling-System-1-rgba {
-  color: rgba(57, 10, 89, 1);
-}
-
-.ROG-Cooling-System-2-rgba {
-  color: rgba(22, 65, 191, 1);
-}
-
-.ROG-Cooling-System-3-rgba {
-  color: rgba(26, 39, 63, 1);
-}
-
-.ROG-Cooling-System-4-rgba {
-  color: rgba(26, 128, 191, 1);
-}
-
-.ROG-Cooling-System-5-rgba {
-  color: rgba(55, 242, 208, 1);
-}
-
-
-
-/* Preubas */
-
-
-.gridfoot{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "SM . ."
-  ". Q1 Q2";
-}
-
-
-#SM{
-  grid-area: SM;
-}
-
-#Q1{
-  grid-area: Q1;
-}
-
-#Q2{
-  grid-area: Q2;
-}
-
-
-
-/* grid */
-.centertex{
-  text-align: center;
-}
+/* Grid general */
 
 .grid {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+}
+
+/* foot general */
+.gridfoot {
+  grid-template-areas:
+    "SM . ."
+    ". Q1 Q2";
+
+}
+
+#SM {
+  grid-area: SM;
+}
+
+#Q1 {
+  grid-area: Q1;
+}
+
+#Q2 {
+  grid-area: Q2;
+}
+
+/* grid compra */
+.centertex {
+  text-align: center;
+}
+
+.gridSell {
   row-gap: 1em;
   column-gap: 1em;
   grid-template-areas:
@@ -191,7 +149,6 @@ form{
   ;
   margin-bottom: 1em;
 }
-
 
 #category {
   grid-area: category;
@@ -221,16 +178,27 @@ form{
   grid-area: box5;
 }
 
-/* prueba */
-.color{
-  background-color: rgba(27, 106, 167, 0.3);
+/* Color Theme Swatches in RGBA */
+.ROG-Cooling-System-1-rgba {
+  color: rgba(57, 10, 89, 1);
 }
 
-/* animacion */
-/* 
-main div img:hover{
-  zoom: 150%;
-} */
+.ROG-Cooling-System-2-rgba {
+  color: rgba(22, 65, 191, 1);
+}
+
+.ROG-Cooling-System-3-rgba {
+  color: rgba(26, 39, 63, 1);
+}
+
+.ROG-Cooling-System-4-rgba {
+  color: rgba(26, 128, 191, 1);
+}
+
+.ROG-Cooling-System-5-rgba {
+  color: rgba(55, 242, 208, 1);
+}
+
 
 
 /* Responsive (agrego 992 segun el menu hamburguesa) 768 original */
@@ -249,23 +217,15 @@ main div img:hover{
 
   nav {
     flex-direction: column;
-    padding: auto;
+    
   }
 
-  nav ul li, nav a{
-  text-align: center;
-  }
+  nav div ul{
+    padding-left: 0em;
+  }  
 
-  h1,
-  h2,
-  h3 {
-    color: rgba(26, 168, 154, 1);
-    /* font-size: 90%; */
-  }
 
-}
-.text{
+.text {
   font-weight: bold;
-  color: rgba(27, 106, 167, 1)
-
+}
 }

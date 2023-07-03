@@ -24,22 +24,32 @@ li {
 
 main {
   text-align: center;
+  padding: 1em;
 }
 
 /* Formato de textos */
 
 p {
-  line-height: 1.2;
-  color: rgba(27, 106, 167, 1);
+  line-height: 1.1;
+  color:rgb(148, 148, 148);
   font-weight: 200;
+
 }
 
 
 a {
   text-decoration: none;
-  color: rgba(27, 106, 167, 1);
+  color: rgb(36, 36, 36);
 }
 
+h1{
+  font-size: 2em;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 1.8em;
+}
 /* separacion del footer */
 .form {
   padding-bottom: 1em;
@@ -86,6 +96,11 @@ object-fit: initial;
   padding: 0%;
 }
 
+.user-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .contact--form {
   display: flex;
@@ -111,8 +126,24 @@ object-fit: initial;
   border-radius: 2%;
   padding: 1%;
 }
-/* Grid general */
 
+
+
+
+/* Quienes somos */
+.aboutimg{
+height: 25em;
+border-radius: 2%;
+}
+
+.gridcontact{
+  flex-direction: column;
+  text-align: left;
+  margin: 1em;
+  }
+
+
+  /* Grid general */
 
 .grid {
   width: 100%;
@@ -239,4 +270,9 @@ object-fit: initial;
 .text {
   font-weight: bold;
 }
+.aboutimg{
+  width: 25em;
 }
+
+}
+

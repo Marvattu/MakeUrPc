@@ -6,9 +6,7 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-body{
 
-}
 /* selector descendente */
 nav {
   background-color: rgba(27, 106, 167, 0.3);
@@ -31,7 +29,7 @@ main {
 
 p {
   line-height: 1.1;
-  color:rgb(148, 148, 148);
+  color: rgb(148, 148, 148);
   font-weight: 200;
 
 }
@@ -42,14 +40,15 @@ a {
   color: rgb(36, 36, 36);
 }
 
-h1{
+h1 {
   font-size: 2em;
   font-weight: 600;
 }
 
-h2{
+h2 {
   font-size: 1.8em;
 }
+
 /* separacion del footer */
 .form {
   padding-bottom: 1em;
@@ -67,9 +66,10 @@ h2{
   border-radius: 50%;
 }
 
-.hamburger{
+.hamburger {
   width: 1.5em;
 }
+
 .img-little {
   width: 2em;
 }
@@ -79,16 +79,16 @@ h2{
 }
 
 .img-background {
-height: 100%;
-width: 60%;
-object-fit: initial;
+  height: 100%;
+  width: 60%;
+  object-fit: initial;
 }
 
 .img-sell {
   width: 10em;
   height: 10em;
   /* convierte a la imagen en 10em -10em de foto sin cambiar la escala */
-  object-fit:initial;
+  object-fit: initial;
 }
 
 /* no se porque pasa esto ("preguntas frecuentes" se corre) */
@@ -96,7 +96,7 @@ object-fit: initial;
   padding: 0%;
 }
 
-.user-flex{
+.user-flex {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -131,19 +131,19 @@ object-fit: initial;
 
 
 /* Quienes somos */
-.aboutimg{
-height: 25em;
-border-radius: 2%;
+.aboutimg {
+  height: 25em;
+  border-radius: 2%;
 }
 
-.gridcontact{
+.gridcontact {
   flex-direction: column;
   text-align: left;
   margin: 1em;
-  }
+}
 
 
-  /* Grid general */
+/* Grid general */
 
 .grid {
   width: 100%;
@@ -155,21 +155,21 @@ border-radius: 2%;
 /* foot general */
 .gridfoot {
   grid-template-areas:
-    "SM . ."
-    ". Q1 Q2";
+    "a1 . ."
+    ". b2 b3";
 
 }
 
-#SM {
-  grid-area: SM;
+#a1 {
+  grid-area: a1;
 }
 
-#Q1 {
-  grid-area: Q1;
+#b2 {
+  grid-area: b2;
 }
 
-#Q2 {
-  grid-area: Q2;
+#b3 {
+  grid-area: b3;
 }
 
 /* grid compra */
@@ -217,9 +217,12 @@ border-radius: 2%;
 }
 
 
-.botsell{
-  width: 60%;
+.botsell {
+  width: 50%;
+  background-color: bisque;
 }
+
+
 
 /* Color Theme Swatches in RGBA */
 .ROG-Cooling-System-1-rgba {
@@ -242,10 +245,6 @@ border-radius: 2%;
   color: rgba(55, 242, 208, 1);
 }
 
-
-
-/* Responsive (agrego 992 segun el menu hamburguesa) 768 original */
-
 @media (width < 768px) {
 
   /* Tienda */
@@ -262,17 +261,17 @@ border-radius: 2%;
     flex-direction: column;
   }
 
-  nav div ul{
+  nav div ul {
     padding-left: 0em;
-  }  
+  }
 
 
-.text {
-  font-weight: bold;
+  .text {
+    font-weight: bold;
+  }
+
+  .aboutimg {
+    width: 25em;
+  }
+
 }
-.aboutimg{
-  width: 25em;
-}
-
-}
-

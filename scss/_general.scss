@@ -1,0 +1,28 @@
+
+*{
+  font-family: $fontGeneral;
+  box-sizing: border-box;
+}
+
+nav{
+  background-color: $navColors;
+  border-radius: 1em;
+}
+
+ul,a,li,img{
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  color: $black;
+};
+
+main{
+  text-align: center;
+} 
+
+.grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}

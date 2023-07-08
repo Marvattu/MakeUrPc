@@ -1,0 +1,59 @@
+//Forma de la nav
+
+.imgIcono{
+  width: 12em;
+}
+
+.imgUser{
+  width: 2.5em;
+  border-radius: 50%;
+}
+
+.hamburger {
+  width: 1.5em;
+}
+
+.distanceNav{
+  margin-left: 0.5em;
+}
+
+// Parche de usuario centrado en mobile
+.userCenter{
+  @media (width < 768px) {
+    display: flex;
+    justify-content: center;    
+  }
+}
+
+//Forma del footer
+
+.gridfoot {
+  grid-template-areas:
+    "a1 a2 a3";
+  div{
+    text-align: center;
+    ul{
+      padding-left: 0em;
+    }
+  }
+}
+
+#a1 {
+  grid-area: a1;
+}
+
+#b2 {
+  grid-area: b2;
+}
+
+#b3 {
+  grid-area: b3;
+}
+
+a:hover{
+  color: $grey;
+}
+
+.imgSocialMedia{
+  width: 2em;
+}

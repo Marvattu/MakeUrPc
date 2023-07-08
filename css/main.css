@@ -1,3 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(27, 106, 167, 0.3);
+  border-radius: 1em;
+}
+
+ul, a, li, img {
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+}
+
+main {
+  text-align: center;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.imgIcono {
+  width: 12em;
+}
+
+.imgUser {
+  width: 2.5em;
+  border-radius: 50%;
+}
+
+.hamburger {
+  width: 1.5em;
+}
+
+.distanceNav {
+  margin-left: 0.5em;
+}
+
+@media (width < 768px) {
+  .userCenter {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.gridfoot {
+  grid-template-areas: "a1 a2 a3";
+}
+.gridfoot div {
+  text-align: center;
+}
+.gridfoot div ul {
+  padding-left: 0em;
+}
+
+#a1 {
+  grid-area: a1;
+}
+
+#b2 {
+  grid-area: b2;
+}
+
+#b3 {
+  grid-area: b3;
+}
+
+a:hover {
+  color: rgb(148, 148, 148);
+}
+
+.imgSocialMedia {
+  width: 2em;
+}
+
+.carrouselMedia {
+  height: 100%;
+  width: 50%;
+  object-fit: initial;
+}
+
+@media (width < 768px) {
+  /* Tienda */
+  .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 1em; */
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav div ul {
+    padding-left: 0em;
+  }
+  .text {
+    font-weight: bold;
+  }
+  .aboutimg {
+    width: 25em;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

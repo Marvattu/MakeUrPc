@@ -1,0 +1,30 @@
+@media (width < 768px) {
+
+  /* Tienda */
+  .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 1em; */
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav div ul {
+    padding-left: 0em;
+  }
+
+
+  .text {
+    font-weight: bold;
+  }
+
+  .aboutimg {
+    width: 25em;
+  }
+
+}

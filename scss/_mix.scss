@@ -1,0 +1,15 @@
+@mixin flexMod ($direccion,){
+  display: flex;
+  flex-direction: $direccion;
+}
+
+@mixin generalBottom ($style,$color,$brdWidth,$radius,$margin,$padding,$height,$width){
+  border-style: $style;
+  border-color: $color;
+  border-width: $brdWidth;
+  border-radius: $radius;
+  margin: $margin;
+  padding: $padding;
+  height: $height;
+  width: $width;
+}

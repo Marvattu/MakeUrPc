@@ -2,9 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 //Variables 
 @import "_vars.scss";
+@import "_mix.scss";
 //Pages
 @import "_general.scss";
 @import "_nav.scss";
 @import "_shop.scss";
 @import "_index.scss";
+@import "_user.scss";
+@import "_contact";
 @import "_medias.scss";
+@import "_about.scss";

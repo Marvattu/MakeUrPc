@@ -6,31 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nosotros</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="shortcut icon" href="../ico/mando.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-
-  <!-- Inicio de tags en pagina principal / separacion entre vinculos de busquedas y usuario -->
   <nav class="navbar navbar-expand-md">
     <div class="container-fluid">
       <a href="../index.html">
-        <img class="img-ico" src="../ico/mypc.png" alt="MakeYourPc" />
+        <img class="imgIcono" src="../ico/mypc.png" alt="MakeYourPc" />
       </a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
-        <!-- hamburguesa <3 -->
         <img class="hamburger" src="../ico/menu.png" alt="Menu">
       </button>
       <div class="navbar-collapse collapse" id="navbarSupportedContent">
-
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="text  nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+          <li class="distanceNav dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Tienda
             </a>
             <ul class="dropdown-menu">
@@ -47,32 +43,26 @@
               <li><a class="dropdown-item" href="./shop.html">General</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="text nav-link" href="./contact.html">Contacto</a>
+          <li class="distanceNav">
+            <a class="" href="./contact.html">Contacto</a>
           </li>
         </ul>
-        <div>
-          <a class="text nav-link " href="./user.html">
-            <img src="../ico/user.jpg" class="img-user" alt="Usuario" />Usuario
+        <div class="userCenter">
+          <a href="./user.html">
+            <img src="../ico/user.jpg" class="imgUser" alt="Usuario" />Usuario
           </a>
         </div>
       </div>
     </div>
   </nav>
-  <!-- finalizacion de los tags -->
 
-  <header>
-
-  </header>
-
-  <!-- Contenido principal "main" -->
   <main>
-    <article class="grid ">
+    <article class="grid">
       <div>
         <h2>Quienes somos</h2>
         <img src="../ico/Local.jpg" class="aboutimg" alt="Foto del local se observan monitores">
       </div>
-      <div class="gridcontact user-flex">
+      <div class="">
         <h2>Mision</h2>
         <P>Poder alcanzarle a cada argentino la posibilidad de tener tecnologia en la puerta de la casa </P>
         <h2>Vision</h2>
@@ -88,76 +78,78 @@
     </article>
 
     <article>
-      <h2>Preguntas frecuentes:</h2>
+      <div>
+        <h2>Preguntas frecuentes:</h2>
+        <ul class="paddigCero">
+          <li>
+            <a href="#cancel">Cancelar compra</a>
+          </li>
+          <li>
+            <a href="#take">Retiro en el local</a>
+          </li>
+          <li>
+            <a href="#return">Devoluciones</a>
+          </li>
+          <li>
+            <a href="#lost">Cambiar la contraseña</a>
+          </li>
+          <li>
+            <a href="#condition">Terminos y condiciones</a>
+          </li>
+        </ul>
+      </div>
 
-      <ul class="correct-pad">
-        <li>
-          <a href="#cancel">Cancelar compra</a>
-        </li>
-        <li>
-          <a href="#take">Retiro en el local</a>
-        </li>
-        <li>
-          <a href="#return">Devoluciones</a>
-        </li>
-        <li>
-          <a href="#lost">Cambiar la contraseña</a>
-        </li>
-        <li>
-          <a href="#condition">Terminos y condiciones</a>
-        </li>
-      </ul>
+      <div>
+        <h3 id="cancel">Cancelar compra</h3>
+        <p>
+          Si te arrepentiste de la compra, Comunicate a travez de una red social o enviando a <a
+            href="./contact.html">Contacto</a> (con la opcion cancelar compra) que quieres realizar dicha
+          cancelacion, el
+          dinero se encontrara disponible dentro de los 5 dias habiles a la fecha.
+        </p>
 
-      <h3 id="cancel">Cancelar compra</h3>
-      <p>
-        Si te arrepentiste de la compra, Comunicate a travez de una red social o enviando a <a
-          href="./contact.html">Contacto</a> (con la opcion cancelar compra) que quieres realizar dicha
-        cancelacion, el
-        dinero se encontrara disponible dentro de los 5 dias habiles a la fecha.
-      </p>
+        <h3 id="take">Retiro en el local</h3>
+        <p>
+          Nuestro horario de entrega se realiza de 10 a 18 Hs, presentando el recibo de compra Fisico / Virtual
+        </p>
 
-      <h3 id="take">Retiro en el local</h3>
-      <p>
-        Nuestro horario de entrega se realiza de 10 a 18 Hs, presentando el recibo de compra Fisico / Virtual
-      </p>
+        <h3 id="return">Devoluciones</h3>
+        <p>Para cualquier producto no dañado, simplemente devuélvelo con los accesorios y el paquete incluidos junto
+          con
+          el recibo original (o recibo de regalo) dentro de los 14 días posteriores a la fecha que recibiste el
+          producto,
+          y lo cambiaremos o te ofreceremos un reembolso basado en el método de pago original. </p>
 
-      <h3 id="return">Devoluciones</h3>
-      <p>Para cualquier producto no dañado, simplemente devuélvelo con los accesorios y el paquete incluidos junto
-        con
-        el recibo original (o recibo de regalo) dentro de los 14 días posteriores a la fecha que recibiste el
-        producto,
-        y lo cambiaremos o te ofreceremos un reembolso basado en el método de pago original. </p>
+        <h3 id="lost">Cambiar la contraseña</h3>
+        <p>
+          Para realizar el cambio de contraseña solo debes dirigirte a <a href="./user.html">Usuario</a> y debes
+          ir a
+          Modificar Datos > Reestablecer la contraseña.
+        </p>
 
-      <h3 id="lost">Cambiar la contraseña</h3>
-      <p>
-        Para realizar el cambio de contraseña solo debes dirigirte a <a href="./user.html">Usuario</a> y debes
-        ir a
-        Modificar Datos > Reestablecer la contraseña.
-      </p>
+        <h2 id="condition">Terminos y condiciones</h2>
+        <p>
+          Al comprar un artículo, aceptas que: (i) eres responsable de leer el listado completo del artículo antes
+          de
+          comprometerte a comprarlo: (ii) celebras un contrato legalmente vinculante para comprar un artículo
+          cuando te
+          comprometed a comprar un artículo y completar el proceso de check-out.
 
-    </article>
+          Los precios que cobramos por usar nuestros servicios / para nuestros productos se enumeran en la página
+          web. Nos
+          reservamos el derecho de cambiar nuestros precios para los productos que se muestran en cualquier
+          momento y de
+          corregir los errores de precios que pueden ocurrir inadvertidamente. Información adicional sobre precios
+          e
+          impuestos sobre las ventas está disponible en la página de pagos.
+
+          "La tarifa por los servicios y cualquier otro cargo que pueda incurrir en relación con tu uso del
+          servicio, como
+          los impuestos y las posibles tarifas de transacción, se cobrarán mensualmente a tu método de pago. </p>
+
+      </div>
 
 
-    <article>
-      <h2 id="condition">Terminos y condiciones</h2>
-      <p>
-        Al comprar un artículo, aceptas que: (i) eres responsable de leer el listado completo del artículo antes
-        de
-        comprometerte a comprarlo: (ii) celebras un contrato legalmente vinculante para comprar un artículo
-        cuando te
-        comprometed a comprar un artículo y completar el proceso de check-out.
-
-        Los precios que cobramos por usar nuestros servicios / para nuestros productos se enumeran en la página
-        web. Nos
-        reservamos el derecho de cambiar nuestros precios para los productos que se muestran en cualquier
-        momento y de
-        corregir los errores de precios que pueden ocurrir inadvertidamente. Información adicional sobre precios
-        e
-        impuestos sobre las ventas está disponible en la página de pagos.
-
-        "La tarifa por los servicios y cualquier otro cargo que pueda incurrir en relación con tu uso del
-        servicio, como
-        los impuestos y las posibles tarifas de transacción, se cobrarán mensualmente a tu método de pago. </p>
     </article>
 
   </main>
@@ -165,9 +157,9 @@
 
   <!-- Pie de pagina -->
   <footer>
-    <nav class="grid navbar gridfoot">
-      <div>
-        <ul id="b2">
+    <nav class="grid gridfoot">
+      <div id="a1">
+        <ul>
           <li>
             <h3>Conocenos</h3>
           </li>
@@ -175,48 +167,52 @@
             <a href="./about.html">Quienes somos</a>
           </li>
           <li>
-            <a href="./about.html#condition">Terminos y condiciones</a>
+            <a href="#condition">Terminos y condiciones</a>
           </li>
           <li>
             <a href="./contact.html">Trabaja Con nosotros</a>
           </li>
         </ul>
       </div>
-      <div>
-        <ul id="b3">
+      <div id="a2">
+        <ul>
           <li>
             <h3>Compras</h3>
           </li>
           <li>
-            <a href="./about.html#map">Retiro en el local</a>
+            <a href="#map">Retiro en el local</a>
           </li>
           <li>
-            <a href="./about.html#return">Politica de devolucion</a>
+            <a href="#return">Politica de devolucion</a>
           </li>
           <li>
-            <a href="./about.html#cancel">Cancelar compra</a>
+            <a href="#cancel">Cancelar compra</a>
           </li>
         </ul>
       </div>
-      <div id="a1" class="centertex">
+      <div id="a3" class="centertex">
         <h3>Encontranos en</h3>
         <a href="https://www.facebook.com" target="_blank">
-          <img class="img-little" src="../ico/facebook.png" alt="Facebook">
+          <img class="imgSocialMedia" src="../ico/facebook.png" alt="Facebook">
         </a>
         <a href="https://www.Instagram.com" target="_blank">
-          <img class="img-little" src="../ico/instagram.png" alt="Instagram">
+          <img class="imgSocialMedia" src="../ico/instagram.png" alt="Instagram">
         </a>
         <a href="https://www.twitter.com" target="_blank">
-          <img class="img-little" src="../ico/twitter.png" alt="Twitter">
+          <img class="imgSocialMedia" src="../ico/twitter.png" alt="Twitter">
         </a>
         <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-          <img class="img-little" src="../ico/whatsapp.png" alt="Whatsapp +54110303456">
+          <img class="imgSocialMedia" src="../ico/whatsapp.png" alt="Whatsapp +54110303456">
         </a>
       </div>
     </nav>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

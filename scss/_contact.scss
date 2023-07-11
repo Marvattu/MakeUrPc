@@ -1,0 +1,10 @@
+.marginForm{
+  @include generalBottom(solid,rgba(44, 43, 43, 0.185),1px,1em,0,auto,auto,65%)
+}
+
+.form {
+  @include flexMod (column);
+  text-align: left;
+  padding-left: 25%;
+}
+

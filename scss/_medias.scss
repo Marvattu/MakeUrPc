@@ -4,25 +4,13 @@
   .grid {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 1em; */
-  }
-
-  nav {
+    padding-bottom: 1em;
     flex-direction: column;
   }
-
-  nav div ul {
-    padding-left: 0em;
-  }
-
-
-  .text {
-    font-weight: bold;
-  }
-
+  
   .aboutimg {
     width: 25em;
   }

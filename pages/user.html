@@ -8,7 +8,7 @@
   <title>Usuario</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="shortcut icon" href="../ico/mando.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
   <nav class="navbar navbar-expand-md">
     <div class="container-fluid">
       <a href="../index.html">
-        <img class="img-ico" src="../ico/mypc.png" alt="MakeYourPc" />
+        <img class="imgIcono" src="../ico/mypc.png" alt="MakeYourPc"/>
       </a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -26,10 +26,9 @@
         <img class="hamburger" src="../ico/menu.png" alt="Menu">
       </button>
       <div class="navbar-collapse collapse" id="navbarSupportedContent">
-
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="text  nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+          <li class="distanceNav dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Tienda
             </a>
@@ -47,13 +46,13 @@
               <li><a class="dropdown-item" href="./shop.html">General</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="text nav-link" href="./contact.html">Contacto</a>
+          <li class="distanceNav">
+            <a class="" href="./contact.html">Contacto</a>
           </li>
         </ul>
-        <div>
-          <a class="text nav-link " href="./user.html">
-            <img src="../ico/user.jpg" class="img-user" alt="Usuario" />Usuario
+        <div class="userCenter">
+          <a href="./user.html">
+            <img src="../ico/user.jpg" class="imgUser" alt="Usuario" />Usuario
           </a>
         </div>
       </div>
@@ -66,7 +65,8 @@
 
   <!-- Contenido principal "main" -->
   <main>
-    <article class="user-flex">
+    <article>
+      <div class="userFlex"> 
       <div>
         <img src="../ico/user.jpg" alt="imagen del usuario">
       </div>
@@ -75,29 +75,79 @@
         <h3>Datos del usuario</h3>
         <p>Apellido y nombre: </p>
         <p>Direccion: </p>
-        <a href="#">Modificar datos</a>
-        <a href="#">Restablecer la contraseña</a>
       </div>
+      </div>
+      <a class="btn" href="#">Modificar datos</a>
+      <a class="btn" href="#">Restablecer la contraseña</a>
     </article>
-
+    
     <h2>Ultimas Compras</h2>
 
-    <article>
-      <div class="">
-        <img src="../sell/Ryzen1.jpg" alt="h200 TT">
+    <article class="afterSell">
+      <div class="sellBox">
+        <img class="imgSell" src="../sell/Ryzen1.jpg" alt="h200 TT">
         <h3>Ryzen 9 7000</h3>
         <P>fecha de compra: 03/05/2023</P>
-        <button type="button" class="btn btn-outline-warning">Valorar</button>
-        <button type="button" class="btn btn-outline-danger">Devolver</button>
+        <button type="button" class="btn">Valorar</button>
+        <button type="button" class="btn">Devolver</button>
       </div>
 
-      <div class="">
-        <img src="../sell/xbox1.png" alt="xbox">
+      <div class="sellBox">
+        <img class="imgSell" src="../sell/xbox1.png" alt="xbox">
         <h3>joystick Xbox</h3>
         <P>fecha de compra: 03/05/2023</P>
-        <button type="button" class="btn btn-outline-warning">Valorar</button>
-        <button type="button" class="btn btn-outline-danger">Devolver</button>
+        <button type="button" class="btn">Valorar</button>
+        <button type="button" class="btn">Devolver</button>
       </div>
+
+      <div id="box2" class=" sellBox">
+        <img class="imgSell" src="../sell/h200.jpg" alt="h200 TT">
+        <h3>h200 thermaltake</h3>
+        <P>fecha de compra: 03/05/2023</P>
+        <button type="button" class="btn">Valorar</button>
+        <button type="button" class="btn">Devolver</button>
+      </div>
+
+      <div id="box2" class=" sellBox">
+        <img class="imgSell" src="../sell/h200.jpg" alt="h200 TT">
+        <h3>h200 thermaltake</h3>
+        <P>fecha de compra: 03/05/2023</P>
+        <button type="button" class="btn">Valorar</button>
+        <button type="button" class="btn">Devolver</button>
+      </div>
+
+      <div class="sellBox">
+        <img class="imgSell" src="../sell/Ryzen1.jpg" alt="h200 TT">
+        <h3>Ryzen 9 7000</h3>
+        <P>fecha de compra: 03/05/2023</P>
+        <button type="button" class="btn">Valorar</button>
+        <button type="button" class="btn">Devolver</button>
+      </div>
+
+      <div class="sellBox">
+        <img class="imgSell" src="../sell/xbox1.png" alt="xbox">
+        <h3>joystick Xbox</h3>
+        <P>fecha de compra: 03/05/2023</P>
+        <button type="button" class="btn">Valorar</button>
+        <button type="button" class="btn">Devolver</button>
+      </div>
+
+      <div id="box2" class=" sellBox">
+        <img class="imgSell" src="../sell/h200.jpg" alt="h200 TT">
+        <h3>h200 thermaltake</h3>
+        <P>fecha de compra: 03/05/2023</P>
+        <button type="button" class="btn">Valorar</button>
+        <button type="button" class="btn">Devolver</button>
+      </div>
+
+      <div id="box2" class=" sellBox">
+        <img class="imgSell" src="../sell/h200.jpg" alt="h200 TT">
+        <h3>h200 thermaltake</h3>
+        <P>fecha de compra: 03/05/2023</P>
+        <button type="button" class="btn">Valorar</button>
+        <button type="button" class="btn">Devolver</button>
+      </div>
+
 
     </article>
 
@@ -105,9 +155,9 @@
 
   <!-- Pie de pagina -->
   <footer>
-    <nav class="grid navbar gridfoot">
-      <div>
-        <ul id="b2">
+    <nav class="grid gridfoot">
+      <div id="a1">
+        <ul>
           <li>
             <h3>Conocenos</h3>
           </li>
@@ -122,8 +172,8 @@
           </li>
         </ul>
       </div>
-      <div>
-        <ul id="b3">
+      <div id="a2">
+        <ul>
           <li>
             <h3>Compras</h3>
           </li>
@@ -138,19 +188,19 @@
           </li>
         </ul>
       </div>
-      <div id="a1" class="centertex">
+      <div id="a3" class="centertex">
         <h3>Encontranos en</h3>
         <a href="https://www.facebook.com" target="_blank">
-          <img class="img-little" src="../ico/facebook.png" alt="Facebook">
+          <img class="imgSocialMedia" src="../ico/facebook.png" alt="Facebook">
         </a>
         <a href="https://www.Instagram.com" target="_blank">
-          <img class="img-little" src="../ico/instagram.png" alt="Instagram">
+          <img class="imgSocialMedia" src="../ico/instagram.png" alt="Instagram">
         </a>
         <a href="https://www.twitter.com" target="_blank">
-          <img class="img-little" src="../ico/twitter.png" alt="Twitter">
+          <img class="imgSocialMedia" src="../ico/twitter.png" alt="Twitter">
         </a>
         <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-          <img class="img-little" src="../ico/whatsapp.png" alt="Whatsapp +54110303456">
+          <img class="imgSocialMedia" src="../ico/whatsapp.png" alt="Whatsapp +54110303456">
         </a>
       </div>
     </nav>

@@ -10,23 +10,18 @@
   border-color:rgba(44, 43, 43, 0.705) ;
 }
 
-.btn{
-  @include generalBottom(solid,rgba(44, 43, 43, 0.185),1px,1.1em,auto,auto,auto,auto)
-}
-
 .afterSell{
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
   justify-items: center;
   @media (width < 1210px) {
     grid-template-columns: 1fr 1fr;   
-    align-items: center;
   }
   @media (width < 768px) {
     @include flexMod(column);
     align-items: center;
+  }
+  @media (width > 1400px) {
+    padding-left: 20%;
+    width: 80%;
   }
 }
 

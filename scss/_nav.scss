@@ -2,6 +2,12 @@
 
 .imgIcono{
   width: 12em;
+  &:hover{
+    transform: rotate(-1080deg);
+    cursor: pointer;
+    transition: all 3s;
+
+  };
 }
 
 .imgUser{

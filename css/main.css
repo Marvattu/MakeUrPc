@@ -116,6 +116,11 @@ footer {
 .imgIcono {
   width: 12em;
 }
+.imgIcono:hover {
+  transform: rotate(-1080deg);
+  cursor: pointer;
+  transition: all 3s;
+}
 
 .imgUser {
   width: 2.5em;
@@ -193,10 +198,15 @@ a:hover {
   grid-area: search;
 }
 
-.img-sell {
-  width: 8em;
+.sizeImg {
   height: 8em;
-  object-fit: initial;
+  width: 8em;
+  object-fit: cover;
+}
+.sizeImg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 1s;
 }
 
 .imgSell {
@@ -262,8 +272,8 @@ a:hover {
   border-radius: 2%;
   margin: 0.4em;
   padding: 0.5em;
-  height: 350px;
-  width: 400px;
+  height: 20em;
+  width: 25em;
 }
 
 .sellBox:hover {
@@ -290,6 +300,10 @@ a:hover {
     padding-left: 20%;
     width: 80%;
   }
+}
+
+.marginBot {
+  margin-bottom: 1em;
 }
 
 .marginForm {

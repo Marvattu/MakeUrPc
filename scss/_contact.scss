@@ -1,5 +1,8 @@
 .marginForm{
-  @include generalBottom(solid,rgba(44, 43, 43, 0.185),1px,1em,0,auto,auto,65%)
+  @include generalBottom(solid,$sellBoxColor,1px,1em,0,auto,auto,65%);
+  &:focus{
+    outline: none;
+  }
 }
 
 .form {
@@ -8,3 +11,7 @@
   padding-left: 25%;
 }
 
+.reasonForm{
+  @include generalBottom(solid,$sellBoxColor,1px,1em,0,auto,2em,65%);
+  text-align:center;
+}

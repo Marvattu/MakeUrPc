@@ -6,17 +6,12 @@
     transform: rotate(-1080deg);
     cursor: pointer;
     transition: all 3s;
-
   };
 }
 
 .imgUser{
   width: 2.5em;
   border-radius: 50%;
-}
-
-.hamburger {
-  width: 1.5em;
 }
 
 .distanceNav{
@@ -60,8 +55,8 @@ a:hover{
   color: $grey;
 }
 
-.imgSocialMedia{
-  width: 2em;
+.imgMiddle{
+  width: 1.5em;
 }
 
 .tittleNav{

@@ -1,0 +1,77 @@
+//correcion en la distancia de los botones
+.marginBot{
+  margin-bottom: 1em;
+}
+.rowFlex{
+  @include flexMod(row);
+  justify-content: center;
+}
+
+//Cajas generales de venta y calificacion
+
+.sellBox {
+  @include generalBottom(solid,$sellBoxColor,1px,2%,0.4em,0.5em,20em,25em);
+  h2{
+    font-size: $textLarge;
+  }
+  p.sold{
+    font-size: $textSold;
+    color: $soldColor;
+    font-weight: bold;
+  }
+  &:hover{
+  border-color:$sellBoxColorH 
+}
+}
+
+.sizeImg{
+  height: 8em;
+  width: 8em;
+  object-fit: cover;
+  &:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 1s;
+  };
+}
+
+
+//Formato de Usuario y Venta
+
+.gridSell {
+  grid-template-areas:
+    "category search search";
+    justify-items: center;
+    align-items: center;
+  @media (width < 1210px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "category search"; 
+  }
+@media (width > 1400px) {
+  padding-left: 20%;
+  width: 80%;
+}
+}
+#category {
+  grid-area: category;
+}
+
+#search {
+  grid-area: search;
+}
+
+//buscador y filtro de compra
+
+.filterBox{
+  @include generalBottom(solid,$sellBoxColor,1px,1.1em,auto,0.5em,max,400px);
+}
+
+// parche de tamaño 
+.searchBox{
+  @include generalBottom(solid,$sellBoxColor,1px,1.1em,auto,0.4em,auto,700px);
+  @media (width < 1210px) {
+    @include generalBottom(solid,$sellBoxColor,1px,1.1em,auto,0.4em,auto,330px);
+  }
+}
+

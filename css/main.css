@@ -46,23 +46,25 @@ footer {
 
 .btm {
   border-style: solid;
-  border-color: rgba(44, 43, 43, 0.185);
+  border-color: rgba(44, 43, 43, 0.384);
   border-width: 1px;
   border-radius: 1.1em;
   margin: auto;
   padding: 0.5em;
   height: auto;
   width: auto;
+  background-color: rgb(255, 255, 255);
 }
 .btm:hover {
   border-style: solid;
-  border-color: rgba(44, 43, 43, 0.185);
+  border-color: rgba(44, 43, 43, 0.562);
   border-width: 1px;
   border-radius: 1.1em;
   margin: auto;
   padding: 0.5em;
   height: auto;
   width: auto;
+  transition: all 2s;
 }
 
 .sell {
@@ -98,7 +100,7 @@ footer {
   padding: 0.5em;
   height: auto;
   width: auto;
-  color: rgba(0, 0, 0, 0.685);
+  color: rgb(36, 36, 36);
 }
 
 .return {
@@ -125,10 +127,6 @@ footer {
 .imgUser {
   width: 2.5em;
   border-radius: 50%;
-}
-
-.hamburger {
-  width: 1.5em;
 }
 
 .distanceNav {
@@ -168,13 +166,67 @@ a:hover {
   color: rgb(148, 148, 148);
 }
 
-.imgSocialMedia {
-  width: 2em;
+.imgMiddle {
+  width: 1.5em;
 }
 
 .tittleNav {
   font-size: 1.5em;
   margin-bottom: 0em;
+}
+
+.carrouselMedia {
+  height: 100%;
+  width: 60%;
+  object-fit: initial;
+}
+@media (width < 768px) {
+  .carrouselMedia {
+    width: 100%;
+  }
+}
+
+.marginBot {
+  margin-bottom: 1em;
+}
+
+.rowFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sellBox {
+  border-style: solid;
+  border-color: rgba(44, 43, 43, 0.185);
+  border-width: 1px;
+  border-radius: 2%;
+  margin: 0.4em;
+  padding: 0.5em;
+  height: 20em;
+  width: 25em;
+}
+.sellBox h2 {
+  font-size: 1.5em;
+}
+.sellBox p.sold {
+  font-size: 1.1em;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+}
+.sellBox:hover {
+  border-color: rgba(44, 43, 43, 0.705);
+}
+
+.sizeImg {
+  height: 8em;
+  width: 8em;
+  object-fit: cover;
+}
+.sizeImg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 1s;
 }
 
 .gridSell {
@@ -201,22 +253,6 @@ a:hover {
 
 #search {
   grid-area: search;
-}
-
-.sizeImg {
-  height: 8em;
-  width: 8em;
-  object-fit: cover;
-}
-.sizeImg:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  transition: all 1s;
-}
-
-.imgSell {
-  display: flex;
-  flex-direction: row;
 }
 
 .filterBox {
@@ -253,64 +289,6 @@ a:hover {
   }
 }
 
-.carrouselMedia {
-  height: 100%;
-  width: 60%;
-  object-fit: initial;
-}
-@media (width < 768px) {
-  .carrouselMedia {
-    width: 100%;
-  }
-}
-
-.userFlex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.sellBox {
-  border-style: solid;
-  border-color: rgba(44, 43, 43, 0.185);
-  border-width: 1px;
-  border-radius: 2%;
-  margin: 0.4em;
-  padding: 0.5em;
-  height: 20em;
-  width: 25em;
-}
-
-.sellBox:hover {
-  border-color: rgba(44, 43, 43, 0.705);
-}
-
-.afterSell {
-  justify-items: center;
-}
-@media (width < 1210px) {
-  .afterSell {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (width < 768px) {
-  .afterSell {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (width > 1400px) {
-  .afterSell {
-    padding-left: 20%;
-    width: 80%;
-  }
-}
-
-.marginBot {
-  margin-bottom: 1em;
-}
-
 .marginForm {
   border-style: solid;
   border-color: rgba(44, 43, 43, 0.185);
@@ -321,12 +299,27 @@ a:hover {
   height: auto;
   width: 65%;
 }
+.marginForm:focus {
+  outline: none;
+}
 
 .form {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding-left: 25%;
+}
+
+.reasonForm {
+  border-style: solid;
+  border-color: rgba(44, 43, 43, 0.185);
+  border-width: 1px;
+  border-radius: 1em;
+  margin: 0;
+  padding: auto;
+  height: 2em;
+  width: 65%;
+  text-align: center;
 }
 
 @media (width < 768px) {
@@ -339,9 +332,6 @@ a:hover {
     align-items: center;
     padding-bottom: 1em;
     flex-direction: column;
-  }
-  .aboutimg {
-    width: 25em;
   }
 }
 .paddigCero {

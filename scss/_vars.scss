@@ -1,14 +1,29 @@
 //Colores Generales
 $grey: rgb(148, 148, 148);
 $black: rgb(36, 36, 36);
+$white:rgb(255, 255, 255);
+
+//Box Afuera BTN boton
+
 $sellBoxColor: rgba(44, 43, 43, 0.185);
+$sellBoxColorH: rgba(44, 43, 43, 0.705);
+
 $navColors:rgba(27, 106, 167, 0.3);
+
+
+//texto de compra
+$soldColor:rgb(12, 12, 12);
+
+$generalBtn:rgba(44, 43, 43, 0.384);
+$generalBtnH:rgba(44, 43, 43, 0.562);
+$sellBtn:rgba(0, 116, 224, 0.685);
+$compareBtn:rgba(205, 0, 224, 0.685);
+$appreciateBtn:rgba(255, 251, 0, 0.685);
+$returnBtn:rgba(255, 0, 0, 0.685);
 
 //Fuente
 $fontGeneral:'Ubuntu', sans-serif;
 
-//Tamaño de Texto
-$textSmall: 0.8em;
-$textMedium: 1em;
+//Tamaño general
 $textLarge: 1.5em;
-$textXlarge: 3em;
+$textSold: 1.1em;

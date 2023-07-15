@@ -172,6 +172,11 @@ a:hover {
   width: 2em;
 }
 
+.tittleNav {
+  font-size: 1.5em;
+  margin-bottom: 0em;
+}
+
 .gridSell {
   grid-template-areas: "category search search";
   justify-items: center;

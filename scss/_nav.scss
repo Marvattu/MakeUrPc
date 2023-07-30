@@ -3,9 +3,9 @@
 .imgIcono{
   width: 12em;
   &:hover{
-    transform: rotate(-1080deg);
+    transform: scale(105%);
     cursor: pointer;
-    transition: all 3s;
+    transition: all 1s;
   };
 }
 

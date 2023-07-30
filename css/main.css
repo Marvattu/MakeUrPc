@@ -20,6 +20,9 @@ main {
   text-align: center;
   padding: 1em 0em;
 }
+main p {
+  padding: 0% 2% 0% 2%;
+}
 
 .grid {
   width: 100%;
@@ -115,6 +118,12 @@ footer {
   color: rgba(255, 0, 0, 0.685);
 }
 
+.errorImg {
+  margin-top: auto;
+  width: 25em;
+  margin-bottom: 1em;
+}
+
 .imgIcono {
   width: 12em;
 }
@@ -203,8 +212,8 @@ a:hover {
   border-radius: 2%;
   margin: 0.4em;
   padding: 0.5em;
-  height: 20em;
-  width: 25em;
+  height: auto;
+  width: auto;
 }
 .sellBox h2 {
   font-size: 1.5em;
@@ -214,8 +223,33 @@ a:hover {
   color: rgb(12, 12, 12);
   font-weight: bold;
 }
+.sellBox p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .sellBox:hover {
   border-color: rgba(44, 43, 43, 0.705);
+}
+@media (width < 400px) {
+  .sellBox {
+    border-style: solid;
+    border-color: rgba(44, 43, 43, 0.185);
+    border-width: 1px;
+    border-radius: 1.1em;
+    margin: 0.1em;
+    padding: 0.4em;
+    height: auto;
+    width: 330px;
+  }
+  .sellBox img.imgNO {
+    visibility: hidden;
+    height: 1em;
+  }
+  .sellBox main {
+    margin: 0%;
+  }
 }
 
 .sizeImg {
@@ -242,8 +276,9 @@ a:hover {
 }
 @media (width > 1400px) {
   .gridSell {
-    padding-left: 20%;
-    width: 80%;
+    width: 87.5em;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -264,6 +299,18 @@ a:hover {
   padding: 0.5em;
   height: max;
   width: 400px;
+}
+@media (width < 1210px) {
+  .filterBox {
+    border-style: solid;
+    border-color: rgba(44, 43, 43, 0.185);
+    border-width: 1px;
+    border-radius: 1.1em;
+    margin: auto;
+    padding: 0.4em;
+    height: auto;
+    width: 330px;
+  }
 }
 
 .searchBox {

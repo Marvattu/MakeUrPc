@@ -8,9 +8,8 @@
 }
 
 //Cajas generales de venta y calificacion
-
 .sellBox {
-  @include generalBottom(solid,$sellBoxColor,1px,2%,0.4em,0.5em,20em,25em);
+  @include generalBottom(solid,$sellBoxColor,1px,2%,0.4em,0.5em,auto,auto);
   h2{
     font-size: $textLarge;
   }
@@ -19,9 +18,25 @@
     color: $soldColor;
     font-weight: bold;
   }
+  p{
+        display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   &:hover{
   border-color:$sellBoxColorH 
 }
+  @media (width < 400px) {
+  @include generalBottom(solid,$sellBoxColor,1px,1.1em,0.1em,0.4em,auto,330px);
+  img.imgNO{
+    visibility: hidden;
+    height: 1em;
+  }
+  main{
+    margin: 0%;
+  }
+  }
 }
 
 .sizeImg{
@@ -49,8 +64,9 @@
     "category search"; 
   }
 @media (width > 1400px) {
-  padding-left: 20%;
-  width: 80%;
+  width: 87.5em;
+  margin-left: auto;
+  margin-right: auto;
 }
 }
 #category {
@@ -65,6 +81,9 @@
 
 .filterBox{
   @include generalBottom(solid,$sellBoxColor,1px,1.1em,auto,0.5em,max,400px);
+  @media (width < 1210px) {
+    @include generalBottom(solid,$sellBoxColor,1px,1.1em,auto,0.4em,auto,330px);
+  }
 }
 
 // parche de tamaño 

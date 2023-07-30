@@ -19,6 +19,9 @@ ul,a,li,img{
 main{
   text-align: center;
   padding: 1em 0em;
+  p{
+    padding: 0% 2% 0% 2%;
+  };
 } 
 
 .grid{
@@ -77,3 +80,8 @@ footer{
   color: $returnBtn;
 }
 
+.errorImg{
+  margin-top: auto;
+  width: 25em;
+  margin-bottom: 1em;
+}

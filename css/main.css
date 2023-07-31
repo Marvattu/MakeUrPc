@@ -228,6 +228,8 @@ a:hover {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  color: rgb(148, 148, 148);
+  font-size: 0.9em;
 }
 .sellBox:hover {
   border-color: rgba(44, 43, 43, 0.705);
